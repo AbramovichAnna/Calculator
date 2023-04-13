@@ -8,7 +8,7 @@ let currentValue = '';
 let operand = '';
 let historyValue = '';
 
-// functions
+// calculator functions
 function calculate() {
     const previousValue = parseFloat(historyValue);
     const currentValueFloat = parseFloat(currentValue);
@@ -103,3 +103,27 @@ keys.addEventListener('click', event => {
 
     updateDisplay();
 });
+
+function changeColorMode(mode) {
+    const calculator = document.querySelector('.calculator');
+
+    switch (mode) {
+        case 'red':
+            calculator.style.setProperty('--primary-color', '#540011');
+            calculator.style.setProperty('--secondary-color', '#FF2802');
+            break;
+        case 'green':
+            calculator.style.setProperty('--primary-color', '#194018');
+            calculator.style.setProperty('--secondary-color', '#95FF66');
+
+            break;
+        case 'blue':
+            calculator.style.setProperty('--primary-color', '#0d2275');
+            calculator.style.setProperty('--secondary-color', '#47d4f0');
+            break;
+        default:
+            return;
+    }
+}
+
+

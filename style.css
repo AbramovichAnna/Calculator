@@ -1,14 +1,71 @@
 :root {
-    --primary-color: #000000;
+    --primary-color: #010016;
     --secondary-color: #008B8B;
 }
 
+/* F O N T S  */
 * {
     font-family: 'Roboto', sans-serif;
 }
 
+/*  N A V B A R  */
+nav {
+    margin: 30px auto 0 auto;
+    align-self: center;
+    display: flex;
+    padding-left: 0px;
+    padding-bottom: 15px;
+}
+
+.dropup button {
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 320px;
+    cursor: pointer;
+    padding: auto;
+    border-radius: 10px;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 15px #5b5b5c;
+    box-shadow: 0px 0px 15px #8a8a8a;
+}
+
+.dropup button:hover {
+    width: 320px;
+    -webkit-box-shadow: 0px 0px 15px #0099ff;
+    box-shadow: 0px 0px 15px #0099ff;
+}
+
+.dropdown-menu {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    min-width: 320px;
+    display: none;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    size-adjust: justify;
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.dropdown-menu a:hover {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px #0099ff;
+    box-shadow: 0px 0px 15px #0099ff;
+    color: #fff;
+}
+
+
+/* C A L C U L A T O R   B O D Y  */
 body {
-    margin: 0;
     padding: 0;
     background-color: #000;
     position: absolute;
@@ -20,10 +77,10 @@ body {
 
 .calculator {
     width: 320px;
-    height: 400px;
+    height: 465px;
     position: relative;
     border-radius: 10px;
-    background: linear-gradient(0deg, #000, #232323);
+    background: #000;
     padding: 10px;
 }
 
@@ -37,7 +94,6 @@ body {
             #0000ff, #00ff00, #ffff00, #ff0000);
     background-size: 400%;
     border-radius: 10px;
-
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     z-index: -1;
@@ -48,11 +104,9 @@ body {
     0% {
         background-position: 0 0;
     }
-
     50% {
         background-position: 400% 0;
     }
-
     100% {
         background-position: 0 0;
     }
@@ -61,7 +115,6 @@ body {
 .calculator:after {
     filter: blur(50px);
 }
-
 
 .calculator-screen {
     padding: 25px;
@@ -105,7 +158,7 @@ body {
 }
 
 .calculator-key:hover {
-    background-color: #60ccf0;
+    background-color: #b9e7f7;
     -moz-box-shadow: 0px 0px 15px #0099ff;
     -webkit-box-shadow: 0px 0px 15px #0099ff;
     box-shadow: 0px 0px 15px #0099ff;
